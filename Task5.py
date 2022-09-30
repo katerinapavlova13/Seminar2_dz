@@ -12,10 +12,10 @@ def mix_list(list_orig):
     list = list_orig[:]
     list_length = len(list)
     for i in range(list_length):
-        index_aleatory = random.randint(0, list_length - 1)
+        index = random.randint(0, list_length - 1)
         temp = list[i]
-        list[i] = list[index_aleatory]
-        list[index_aleatory] = temp
+        list[i] = list[index]
+        list[index] = temp
     return list
 
 mixed_list = mix_list(list)
